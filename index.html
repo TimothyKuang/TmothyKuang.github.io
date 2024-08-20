@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>AbnerTeng's Website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script>
+		function navigateToSection(sectionId) {
+			document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+		}
+		function OpenTab(evt, tab_id) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tab_id).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		document.getElementById("defaultOpen").click();
+	</script>
+</head>
+
+<body class="is-preload">
+	<!-- Navigation buttons -->
+	<div id="navbar">
+		<i class="fas fa-kiwi-bird"> Welcome to Abner's Personal Website</i>
+		<button onclick="navigateToSection('one')">About Me</button>
+		<button onclick="navigateToSection('two')">Experiences</button>
+		<button onclick="navigateToSection('three')">Projects</button>
+		<button onclick="navigateToSection('four')">Contact</button>
+	</div>
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a class="image avatar"><img src="images/IMG_1039.png" alt="" /></a>
+			<h1><strong>Hello, I'm Abner Den.</strong><br /><br />
+				A financial engineering master student who dreams to be a <br /> data scientist / machine learning
+				engineer.</h1>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h2>About me</h2>
+			</header>
+			<h4 style="text-align: left;">
+				"Highly Self-Motivated, Critical Thinking, Data Driven, Good Team player".
+			</h4>
+			<div class="tab" style="align-items: center;">
+				<button class="tablinks" onclick="OpenTab(event, 'education')" id="defaultOpen"><i
+						class="fas fa-graduation-cap"
+						style="margin-right: 8px; margin-left: 8px;"></i>Education</button>
+				<button class="tablinks" onclick="OpenTab(event, 'experiences')"><i class="fas fa-desktop"
+						style="margin-right: 8px; margin-left: 8px;"></i>Experiences</button>
+				<button class="tablinks" onclick="OpenTab(event, 'skills')"><i class="fas fa-code"
+						style="margin-right: 8px; margin-left: 8px"></i>Skills</button>
+				<button class="tablinks" onclick="OpenTab(event, 'tas')"><i class="fas fa-chalkboard-teacher"
+						style="margin-right: 8px; margin-left: 8px"></i>TAs</button>
+			</div>
+			<div id="education" class="tabcontent">
+				<p>
+				<ul>
+					<li><span class="item">Master</span></li>
+					<ul>
+						<li>M.S. Money and Banking, National Chengchi University<span class="year">22.09 -
+								24.06 (Expect)</span>
+						</li>
+					</ul>
+					<li><span class="item">Bachelor</span></li>
+					<ul>
+						<li>B.A. in Public Finance, National Chengchi University<span class="year">18.09 - 22.06</span>
+						</li>
+					</ul>
+				</ul>
+				</p>
+			</div>
+			<div id="experiences" class="tabcontent">
+				<p>
+				<ul>
+					<li><span class="item">Internships</span></li>
+					<ul>
+						<li>Graduate Research Assistant @ NCCU <span class="year">23.10 - present</span></li>
+						<li>Data Scientist / Data Analyst Intern @ iKala Interactive Media Inc.<span class="year">23.03
+								-
+								23.11</span></li>
+						<li>Research Consultant @ WorldQuant LLC.<span class="year">22.11 - 23.03</span></li>
+					</ul>
+					<li><span class="item">Academic Societies</span></li>
+					<ul>
+						<li>5th Director of Academic Affairs @ NTU DAC<span class="year">23.07 - present</span></li>
+						<li>24th Mentor of Algorithm Trading Team @ TMBA Taiwan<span class="year">23.07 - Present</span>
+						</li>
+					</ul>
+				</ul>
+				</p>
+			</div>
+			<div id="skills" class="tabcontent">
+				<p>
+				<ul>
+					<li><span class="item">Programming Language</span></li>
+					<ul>
+						<li>Python, SQL, C++, HTML, CSS, Shell Script, LaTeX</li>
+					</ul>
+					<li><span class="item">Develop Related</span></li>
+					<ul>
+						<li>Git, GitHub, Linux Command Line, Vim, Unittest, CI/CD</li>
+					</ul>
+					<li><span class="item">DS/ML Packages</span></li>
+					<ul>
+						<li>DS / ML Packages: PyTorch, Scikit-Learn, HuggingFace, Numpy, Pandas, Scipy</li>
+					</ul>
+				</ul>
+				</p>
+			</div>
+			<div id="tas" class="tabcontent">
+				<p>
+				<ul>
+					<li><span class="item">Graduate</span></li>
+					<ul>
+						<li>Econometrics<span class="year">23.09 - present</span></li>
+					</ul>
+					<li><span class="item">Undergraduate</span></li>
+					<ul>
+						<li>Machine Learning<span class="year">23.02 - 23.06</span>
+						</li>
+						<li>Financial Markets<span class="year">22.09 - 23.01</span></li>
+					</ul>
+				</ul>
+				</p>
+			</div>
+			<script>
+				document.getElementById("defaultOpen").click();
+			</script>
+			<ul class="actions">
+				<li><a href="Abner_CV.pdf" class="button">Download CV</a></li>
+			</ul>
+		</section>
+		<!-- Two -->
+		<section id="two">
+			<header class="major">
+				<h2>Experiences</h2>
+			</header>
+			<div class="row">
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>5th Director of Academic Affairs @ <a href="https://ntudac.com">NTU DAC</a></h3>
+					<a class="image fit thumb"><img src="images/thumbs/dac_bg.JPG" alt="" /></a>
+				</article>
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>Data Scientist / Data Analyst Intern @ iKala</h3>
+					<a class="image fit thumb"><img src="images/thumbs/ikala.jpg" alt="" /></a>
+				</article>
+				<article class="col-6 col-12-xsmall work-item">
+					<h3>Research Consultant @ WorldQuant LLC.</h3>
+					<a class="image fit thumb"><img src="images/thumbs/wq.jpeg" alt="" /></a>
+				</article>
+			</div>
+		</section>
+		<!-- Three -->
+		<section id="three">
+			<header class="major">
+				<h2>Recent Projects</h2>
+			</header>
+			<div class="row">
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>
+						<a href="https://github.com/AbnerTeng/Convex-opt-for-advertorial-pricing">
+							Convex optimization with application on advertorial post pricing strategy
+						</a>
+					</h3>
+					<p>With: Hsi-Yen Lee</p>
+				</article>
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>
+						<!-- <a href="https://github.com/AbnerTeng/FW23_AICUP">
+							Housing price prediction: An ensemble learning approach
+						</a> -->
+						Housing price prediction: An ensemble learning approach
+					</h3>
+					<p>With: Chin-Jui Chen, Guan-Yu Lin, Meng-Chun You</p>
+					<p>SinoPac Holding / TrendMicro</p>
+				</article>
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>Financial News sentiment analysis: An implication on investment portfolio</h3>
+					<p>With: Kung-Wei Lu, Teng-Da Ke</p>
+				</article>
+
+			</div>
+			<ul class="actions">
+				<li><a href="http://www.github.com/AbnerTeng" class="button">Full Portfolio</a></li>
+			</ul>
+		</section>
+		<!-- add after porject done -->
+		<section id="three">
+			<header class="major">
+				<h2>Work-In-Progress</h2>
+			</header>
+			<div class="row">
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>Does One Pattern Fit All? Image Analysis for Different Equity Styles</h3>
+					<p>With: Kendro Vincent</p>
+					<p>Department of Money and Banking, National Chengchi University</p>
+				</article>
+			</div>
+			<div class="row">
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>Data Town</h3>
+					<p>With: Chin-Jui Chen, Yu-Lin Zheng</p>
+				</article>
+			</div>
+		</section>
+		<!-- Four -->
+		<section id="four">
+			<h2>Get In Touch</h2>
+			<p>Feel free to contact!</p>
+			<div class="row">
+				<div class="col-8 col-12-small">
+					<form method="post" action="#">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
+									placeholder="Name" /></div>
+							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
+									placeholder="Email" /></div>
+							<div class="col-12"><textarea name="message" id="message" placeholder="Message"
+									rows="4"></textarea></div>
+						</div>
+					</form>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" /></li>
+					</ul>
+				</div>
+				<div class="col-4 col-12-small">
+					<ul class="labeled-icons">
+						<li>
+							<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+							(+886) 910-386-884
+						</li>
+						<li>
+							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+							<a href="mailto:abnerteng16@gmail.com">abnerteng16@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Five -->
+		<section id="five">
+			<div class="center-container">
+				<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+				<div class="elfsight-app-5eb865d1-2bdc-4033-aa4e-0d5a84639116" data-elfsight-app-lazy></div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/yu-chen-abner/" class="icon brands fab fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="http://www.github.com/AbnerTeng" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="https://medium.com/@Abnerteng" class="icon brands fab fa-medium"><span
+							class="label">Medium</span></a></li>
+				<li><a href="https://www.facebook.com/abner.teng.7/" class="icon brands fab fa-facebook"><span
+							class="label">FaceBook</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Abner Teng</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
