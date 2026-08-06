@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://timothykuang.github.io/TmothyKuang.github.io/sitemap.xml
